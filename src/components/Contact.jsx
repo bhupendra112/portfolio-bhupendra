@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-// import Header from './Header';
 import Footer from './Footer';
 import photo from "../assets/contact-us-content.gif";
 
@@ -47,13 +46,20 @@ export default function Contact() {
 
   return (
     <>
-      {/* <div>
-        <Header />
-      </div> */}
-      <div className="flex justify-center items-center" style={{ marginTop: "-40px" }}>
-        <form ref={form} className="w-full max-w-lg bg-white p-8 rounded-lg shadow-md" onSubmit={handleSubmit}>
+      <div className="flex flex-col md:flex-row justify-center items-center p-5 md:p-10 bg-white">
+        {/* Form Section */}
+        <form
+          ref={form}
+          className="w-full max-w-lg bg-white p-8 rounded-lg shadow-md md:mr-8 mb-10 md:mb-0"
+          onSubmit={handleSubmit}
+        >
           <div className="mb-6">
-            <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2" style={{ marginLeft: "-391px" }}>Name</label>
+            <label
+              htmlFor="name"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              Name
+            </label>
             <input
               type="text"
               name="name"
@@ -65,7 +71,12 @@ export default function Contact() {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2" style={{ marginLeft: "-391px" }}>Email</label>
+            <label
+              htmlFor="email"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              Email
+            </label>
             <input
               type="email"
               name="email"
@@ -77,7 +88,12 @@ export default function Contact() {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2" style={{ marginLeft: "-391px" }}>Message</label>
+            <label
+              htmlFor="message"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              Message
+            </label>
             <textarea
               name="message"
               id="message"
@@ -96,10 +112,14 @@ export default function Contact() {
             </button>
           </div>
         </form>
-        <div>
-          <img src={photo} alt="Contact Us" />
+
+        {/* Image Section */}
+        <div className="w-full max-w-md md:max-w-sm lg:max-w-md">
+          <img src={photo} alt="Contact Us" className="w-full h-auto rounded-lg shadow-md" />
         </div>
       </div>
+
+      {/* Footer Section */}
       <div className="bg-gray-100">
         <Footer />
       </div>
