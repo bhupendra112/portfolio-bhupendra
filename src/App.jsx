@@ -74,7 +74,7 @@ function App() {
 
         {/* Separate Route for Hire */}
         <Route path="/hire" element={<Hire />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Hire />} />
         <Route path="/message" element={<Massage />} />
         <Route path="/company-message" element={<CompanyMessage />} />
       </Routes>
