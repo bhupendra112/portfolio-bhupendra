@@ -81,13 +81,14 @@ const Banner = () => {
         <br />
         <br />
 
-        {/* Contact Button */}
-        <a
-          className="text-lg sm:text-xl md:text-2xl px-4 py-2 bg-orange-500 hover:bg-orange-600 rounded-full shadow-lg"
-          href="/contact"
-        >
-          Contact Me
-        </a>
+        {/* Contact Button 
+          <a
+            className="text-lg sm:text-xl md:text-2xl px-4 py-2 bg-orange-500 hover:bg-orange-600 rounded-full shadow-lg"
+            href="/contact"
+          >
+            Contact Me
+          </a>
+          */}
       </div>
 
       {/* Image Section */}
