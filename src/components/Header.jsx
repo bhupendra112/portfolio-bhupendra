@@ -31,33 +31,34 @@ const Header = ({ onScrollToSection }) => {
   });
 
   const handleDownloadClick = () => {
-    // You might want to handle the file download logic here
-    // For instance, you can redirect to the file URL for viewing
-    window.open(actionButton.link, '_blank');
+    window.open(actionButton.link, "_blank");
   };
 
   return (
-    <div className="h-20 border main flex justify-between items-center px-16 bg-gray-100">
+    <div className="h-20 border-b flex justify-between items-center px-6 sm:px-10 md:px-16 lg:px-24 bg-gray-100">
+      {/* Brand Name */}
       <div>
-        <h1 className="text-2xl font-bold">{brandName}</h1>
+        <h1 className="text-xl sm:text-2xl font-bold">{brandName}</h1>
       </div>
 
-      <div className="space-x-6">
+      {/* Menu Links */}
+      <div className="hidden md:flex space-x-4 sm:space-x-6">
         {menuLinks.map((link) => (
           <button
             key={link.id}
             onClick={() => onScrollToSection(link.section)}
-            className="hover:text-orange-600"
+            className="hover:text-orange-600 text-sm sm:text-base"
           >
             {link.title}
           </button>
         ))}
       </div>
 
+      {/* Action Button */}
       <div>
         <button
           onClick={handleDownloadClick}
-          className="px-4 py-2 bg-orange-500 shadow rounded-full text-1xl text-white"
+          className="px-3 py-1 sm:px-4 sm:py-2 bg-orange-500 shadow rounded-full text-sm sm:text-base text-white"
         >
           {actionButton.title}
         </button>
