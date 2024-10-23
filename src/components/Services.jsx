@@ -28,7 +28,7 @@ const Services = () => {
         
         {/* Project 1 */}
         <div className="cursor-pointer hover:bg-gray-200 bg-slate-100 p-5 text-center shadow-lg rounded-xl space-y-4">
-          <img className="mx-auto h-48 w-full object-cover" src={bannerImage} alt="E-learning Project" />
+          <img className="mx-auto h-48 w-full object-cover" src={bannerImag3} alt="E-learning Project" />
           <p>Developing an engaging e-learning platform to make education accessible, interactive, and personalized for all</p>
           <div className="project-tech-stack">
             <b>Tech Stack:</b> MERN
@@ -78,7 +78,7 @@ const Services = () => {
 
         {/* Project 3 */}
         <div className="cursor-pointer hover:bg-gray-200 bg-slate-100 p-5 text-center shadow-lg rounded-xl space-y-4">
-          <img className="mx-auto h-48 w-full object-cover" src={bannerImag3} alt="stuffing solution" />
+          <img className="mx-auto h-48 w-full object-cover" src={bannerImage} alt="stuffing solution" />
           <p>providing stuffing services and contact to manager and deal with them</p>
           <div className="project-tech-stack">
             <b>Tech Stack:</b> MERN
