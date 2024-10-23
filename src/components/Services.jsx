@@ -1,5 +1,5 @@
 import { useState } from "react";
-import bannerImage from "../assets/project1.png";
+import bannerImage from "../assets/Banner12.png";
 import bannerImage4 from "../assets/project2.png";
 import bannerImag3 from "../assets/project3.png";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -79,13 +79,13 @@ const Services = () => {
         {/* Project 3 */}
         <div className="cursor-pointer hover:bg-gray-200 bg-slate-100 p-5 text-center shadow-lg rounded-xl space-y-4">
           <img className="mx-auto h-48 w-full object-cover" src={bannerImag3} alt="Smart Traveling Project" />
-          <p>Created a Smart Traveling website with interactive trip planning, real-time updates, and personalized travel recommendations.</p>
+          <p>providing stuffing services and contact to manager and deal with them</p>
           <div className="project-tech-stack">
             <b>Tech Stack:</b> MERN
           </div>
           <div className="flex justify-center space-x-3">
             <a
-              href="https://github.com/Ermanishmishra/CraftHub_Project"
+              href="https://github.com/bhupendra112/SkillTalent"
               target="_blank"
               className="px-3 py-2 bg-orange-500 text-xl rounded-full shadow-lg flex items-center space-x-2"
             >
