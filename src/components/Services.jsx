@@ -78,7 +78,7 @@ const Services = () => {
 
         {/* Project 3 */}
         <div className="cursor-pointer hover:bg-gray-200 bg-slate-100 p-5 text-center shadow-lg rounded-xl space-y-4">
-          <img className="mx-auto h-48 w-full object-cover" src={bannerImag3} alt="Smart Traveling Project" />
+          <img className="mx-auto h-48 w-full object-cover" src={bannerImag3} alt="stuffing solution" />
           <p>providing stuffing services and contact to manager and deal with them</p>
           <div className="project-tech-stack">
             <b>Tech Stack:</b> MERN
@@ -92,7 +92,7 @@ const Services = () => {
               <span>Code</span> <GitHubIcon />
             </a>
             <a
-              href="https://craftshub.netlify.app/"
+              href="https://skilltalents.co.in/"
               target="_blank"
               className="px-3 py-2 bg-orange-500 text-xl rounded-full shadow-lg flex items-center space-x-2"
             >
